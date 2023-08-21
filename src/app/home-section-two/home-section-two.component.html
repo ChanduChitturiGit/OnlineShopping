@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let brand of brands" class="col-3">
+      <div class="card border border-0" style="width: 18rem; ">
+        <!-- <a routerLink="/item/{{item.itemId}}"
+                        ><img
+                    src="{{img_path}}{{item.category}}/{{item.brands['name']}}_{{item.category}}_{{item.name}}.png"
+                    class="card-img-top img"
+                    alt='{{item.category}}_{{item.name}}' style="height: 300px;"/></a>
+          <div class="card-body">
+            <h5 class="card-title">{{item.category}}</h5>
+            <p>{{item.brands['name']}}_{{item.name}}</p>
+            <p>Price:{{item.price}}</p> -->
+        <!-- <a routerLink="/item/{{item.itemId}}"
+                class="btn btn-secondary">view product</a> -->
+        <img
+          src="{{img_path}}{{brand.name}}.png"
+          class="card-img-top img"
+          alt='{{brand.name}}_image' style="height: 150px;" />
+      </div>
+    </div>
+  </div>
+</div>

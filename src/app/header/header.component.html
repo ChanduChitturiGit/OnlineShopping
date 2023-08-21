@@ -1,0 +1,31 @@
+<div class="container-fluid bg-secondary shadow-3" style="height: 100px;">
+    <div class="row">
+        <div class="col-10 pt-4">
+            <ul>
+                <li><a routerLink="" routerLinkActive="active">BE_BOLD</a></li>
+                <li><a routerLink="/shop-all" routerLinkActive="active">Shop_All</a></li>
+                <li><a routerLink="/category/{{conditioner}}" routerLinkActive="active">Conditioner</a></li>
+                <li><a routerLink="/category/{{moisturizer}}" routerLinkActive="active">moisturizer</a></li>
+                <li><a routerLink="/category/{{lipstick}}" routerLinkActive="active">lipstick</a></li>
+                <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+                <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+            </ul>
+           
+        </div>
+        <div class="col-2 pt-4">
+            <ul>
+                <li>
+                    <a routerLink="/cart" routerLinkActive="active"><button type="button" class="btn btn-primary position-relative">
+                        Cart
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                          {{cartLength}}
+                        </span>
+                    </button>
+                    </a>
+                </li>
+            </ul>
+            <!-- <a routerLink="/cart" routerLinkActive="active">cart</a> -->
+            
+        </div>
+    </div>
+</div>
